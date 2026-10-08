@@ -1,0 +1,235 @@
+/* Import Lato font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+/* General Body Styling with default 14px font */
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply the exact radial gradient to both Nav and Header for a seamless background */
+nav, header {
+    background: radial-gradient(ellipse at center,
+      rgba(192,169,145,1) 0%,
+      rgba(192,169,145,1) 59%,
+      rgba(168,143,121,1) 100%);
+    color: #ffffff;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+
+.brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: #ffffff;
+    margin: 0;
+}
+
+.nav-primary {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-item a:hover {
+    opacity: 0.8;
+}
+
+/* Buy It Now Nav Button Outline */
+.button-cta a {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff !important;
+    padding: 8px 22px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 50px 20px 80px 20px;
+}
+
+.header-title {
+    font-size: 3rem;
+    font-weight: 350;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.header-subtitle {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+.header-potato {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Features Section (Clean background, image handled by HTML) */
+.features {
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.features-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.features-subtitle {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.feature-potatoes {
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Buy Now Pricing Tiers Container */
+.buy-now {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 100px 40px;
+    text-align: center;
+}
+
+.order-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 50px;
+}
+
+/* Three-Column Tier List */
+.potato-types {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.potato {
+    flex: 1;
+    background-color: #f8fafc;
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.potato-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.potato-features {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0 0 30px 0;
+}
+
+.potato-description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #475569;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.btn-order {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: none;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btn-order:hover {
+    background-color: #c0a991;
+}
+
+.potato-price {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #059669;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.potato-img {
+    max-width: 160px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin: 0;
+}
